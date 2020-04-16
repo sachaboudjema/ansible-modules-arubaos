@@ -31,6 +31,6 @@ For a detailed description of the API data model, see https://your_controller:43
 
 ### arubaos_set
 
-* Full idempotentency
+* Full idempotency
 * Supports check_mode and diff
 * Supports normal and mulipart set operations
