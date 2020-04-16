@@ -6,8 +6,8 @@ The directory structure can be imported as is alongside playbooks.
 An example playbook is provided, illustrating use cases for all modules.
 
 For a detailed description of each module, see ansible docstrings for each module.\
-For detailed description of API reponse formats, see [ArubaOS 8.x API Guide](https://asp.arubanetworks.com/downloads;fileTypes=DOCUMENT;products=Aruba%20Mobility%20Controllers%20%28AOS%29;fileContents=API%20Guide).
-For a detailed description of the API data model, see ()
+For detailed description of API reponse formats, see [ArubaOS 8.x API Guide](https://asp.arubanetworks.com/downloads;fileTypes=DOCUMENT;products=Aruba%20Mobility%20Controllers%20%28AOS%29;fileContents=API%20Guide).\
+For a detailed description of the API data model, see https://your_controller:4343/api.
 
 ## List of modules
 
