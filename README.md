@@ -19,7 +19,11 @@ For a detailed description of the API data model, see https://your_controller:43
 * **arubaos_writememory**: Executes a show command on the controller and returns structured data when supported
 * **arubaos_showcommand**: Commits the pending configuration (if any) on the specified node
 
-## Main features
+## Noteworthy features
+
+### General
+
+* Arguments `hostname`, `username` and `password` support fallback to env variables `ANSIBLE_ARUBAOS_HOSTNAME`, `ANSIBLE_ARUBAOS_USERNAME`, `ANSIBLE_ARUBAOS_PASSWORD` to avoid having to repeat them on each module call.
 
 ### arubaos_controller_config
 
