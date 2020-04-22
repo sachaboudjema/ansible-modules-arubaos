@@ -1,7 +1,6 @@
 # ArubaOS 8 ansible modules
 
 Set of modules to automate ArubaOS 8 controller plateforms with ansible.\
-The directory structure can be imported as is alongside playbooks.
 
 An example playbook is provided, illustrating use cases for all modules.
 
@@ -38,3 +37,50 @@ For a detailed description of the API data model, see https://your_controller:43
 * Full idempotency
 * Supports check_mode and diff
 * Supports normal and mulipart set operations
+
+## Installating and using the modules
+
+### Installation
+
+#### Prefered method: stall from Ansible Galaxy
+
+If you are using ansible 2.9 or later you can install the collection using the ansible-galaxy client as so:
+
+```
+ansible-galaxy collection install sachaboudjema.arubaos
+```
+
+See the offical Ansible documentation on how to use modules provided with collections.
+
+#### Method 2: Clone and copy to your playbook directory
+
+Simplest way is o clone the repo, and merge the `library`, `module_utils` and `doc_fragments` folders to your playbook dir
+
+```
+git clone https://github.com/sachaboudjema/ansible-modules-arubaos.git arubaos_modules
+cp -r arubaos_modules/library arubaos_modules/module_utils arubaos_modules/doc_fragments <your_playbook_dir>
+```
+
+#### Method 3: Clone and copy to your ansible library
+
+If you need to make the modules available form different directories, you will need to copy the contents to your ansible search path.\
+You can find the list of directories in the search path as so:
+
+```
+[user@localhost ~]$ ansible --version
+ansible 2.9.6
+  config file = None
+  configured module search path = ['/home/schb/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/schb/.local/lib/python3.6/site-packages/ansible
+  executable location = /home/schb/.local/bin/ansible
+  python version = 3.6.8 (default, Oct  7 2019, 17:58:22) [GCC 8.2.1 20180905 (Red Hat 8.2.1-3)]
+```
+
+You can then clone the repo and copy the contents to a directory from the search path, as so:
+
+```
+git clone https://github.com/sachaboudjema/ansible-modules-arubaos.git arubaos_modules
+cp -r arubaos_modules/library <dir_in_search_path>/plugins/modules
+cp -r arubaos_modules/module_utils <dir_in_search_path>/plugins/module_utils
+cp -r arubaos_modules/doc_fragments <dir_in_search_path>/plugins/doc_fragments
+```
