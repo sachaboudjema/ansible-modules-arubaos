@@ -34,7 +34,7 @@ options:
         type: str
         default: None
     data:
-        decription:
+        description:
             - One or more objects which needs to be set. Each object type is a keyn of the top level dict.
             - The SET request is best effort and in case of first failure, others in the same block are not even tried.
             - Each object can contain either a single instance (dict) or a list of instances (list of dicts).
