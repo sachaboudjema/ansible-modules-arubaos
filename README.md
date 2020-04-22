@@ -84,3 +84,7 @@ cp -r arubaos_modules/library <dir_in_search_path>/plugins/modules
 cp -r arubaos_modules/module_utils <dir_in_search_path>/plugins/module_utils
 cp -r arubaos_modules/doc_fragments <dir_in_search_path>/plugins/doc_fragments
 ```
+
+## General discussions and help
+
+For general discussions and help about using the modules, please use this [dedicated google mailing list](https://groups.google.com/forum/#!forum/ansible-modules-arubaos).
