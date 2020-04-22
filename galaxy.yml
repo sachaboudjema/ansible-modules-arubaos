@@ -8,7 +8,6 @@ authors:
   - "Sacha Boudjema <sachaboudjema@gmail.com> @sachaboudjema"
 description: "Set of modules to automate Aruba Networks ArubaOS 8 controller plateforms."
 tags:
-  - aruba networks
   - aruba
   - arubaos
   - networking
