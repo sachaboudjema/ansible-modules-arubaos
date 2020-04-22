@@ -18,6 +18,8 @@ version_added: 2.9.6
 deprecated: true
 extends_documentation_fragment: arubaos
 short_description: Configure ArubaOS products like Mobility Master and Mobility Controllers using AOS APIs
+description:
+    - Configure ArubaOS products like Mobility Master and Mobility Controllers using AOS APIs.
 notes:
     - Kept for backward compatibility. Prefer use of C(arubaos_*) modules instead.
     - Check mode supported but systematically skipped.

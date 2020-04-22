@@ -19,6 +19,8 @@ module: arubaos_get
 version_added: 2.9.6
 extends_documentation_fragment: arubaos
 short_description: Executes GET operations on API objects
+description:
+    - Executes GET operations on API objects.
 options:
     object:
         description:

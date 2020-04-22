@@ -10,8 +10,6 @@ __metaclass__ = type
 
 class ModuleDocFragment(object):
     DOCUMENTATION = r'''
-    notes:
-        - Supports check-mode.
     options:
         host:
             description:
@@ -50,7 +48,7 @@ class ModuleDocFragment(object):
             required: false
             type: str
             default: None
-    see_also:
+    seealso:
         - name: ArubaOS 8.x API Guide
           description: Complete description of ArubaOS API methods with examples.
           link: https://asp.arubanetworks.com/downloads;fileTypes=DOCUMENT;products=Aruba%20Mobility%20Controllers%20%28AOS%29;fileContents=API%20Guide
@@ -58,5 +56,6 @@ class ModuleDocFragment(object):
           description: Complete reference of ArubaOS API data model.
           link: https://<your_controller>:4343/api/
     notes:
+        - Supports check-mode.
         - ArubaOS version 8.0.0.0 or later required.
     '''

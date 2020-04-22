@@ -20,7 +20,8 @@ module: arubaos_facts
 version_added: 2.9.6
 extends_documentation_fragment: arubaos
 short_description: Populates ansible_facts with C(sys_info) details about the system to which the query is being sent
-desciription:
+description:
+    - Populates ansible_facts with C(sys_info) details about the system to which the query is being sent.
     - For a full list of retrieved facts, see API documentation.
 options: {}
 '''

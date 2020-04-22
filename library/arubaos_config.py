@@ -19,6 +19,8 @@ module: arubaos_config
 version_added: 2.9.6
 extends_documentation_fragment: arubaos
 short_description: Queries full or partial configuration of a particular configuration node
+description:
+    - Queries full or partial configuration of a particular configuration node.
 options:
     config_path:
         description:

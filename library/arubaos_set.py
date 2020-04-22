@@ -19,6 +19,8 @@ module: arubaos_set
 version_added: 2.9.6
 extends_documentation_fragment: arubaos
 short_description: Add, modify or delete the configuration
+description:
+    - Add, modify or delete the configuration.
 notes:
     - Supports C(--diff).
     - Check-mode is not supported on nodes with pending configuration.

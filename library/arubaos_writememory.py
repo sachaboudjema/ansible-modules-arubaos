@@ -21,6 +21,7 @@ version_added: 2.9.6
 extends_documentation_fragment: arubaos
 short_description: Commits the pending configuration on the specified node
 description:
+    - Commits the pending configuration on the specified node.
     - The task is skipped if there is nothing to commit.
 options:
     config_path:
