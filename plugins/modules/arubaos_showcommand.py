@@ -19,9 +19,9 @@ author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_showcommand
 version_added: 2.9.6
 extends_documentation_fragment: sachaboudjema.arubaos.arubaos
-short_description: Executes a C(show) command on the controller and returns structured data when supported
+short_description: Executes a show command on the controller and returns structured data when supported
 description:
-    - Executes a C(show) command on the controller and returns structured data when supported.
+    - "Executes a C(show) command on the controller and returns structured data when supported."
 options:
     command:
         descriptition:
