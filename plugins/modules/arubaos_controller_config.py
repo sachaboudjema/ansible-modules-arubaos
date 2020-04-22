@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -16,7 +16,7 @@ author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_controller_config
 version_added: 2.9.6
 deprecated: true
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Configure ArubaOS products like Mobility Master and Mobility Controllers using AOS APIs
 description:
     - Configure ArubaOS products like Mobility Master and Mobility Controllers using AOS APIs.
@@ -97,7 +97,7 @@ import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
 from ansible.errors import AnsibleModuleError
-from ansible.module_utils.arubaos import ArubaOsApi, update_path_query, argspec_common
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, update_path_query, argspec_common
 
 
 def run_module():

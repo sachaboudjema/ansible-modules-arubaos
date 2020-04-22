@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -17,7 +17,7 @@ DOCUMENTATION = r'''
 author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_set
 version_added: 2.9.6
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Add, modify or delete the configuration
 description:
     - Add, modify or delete the configuration.
@@ -162,7 +162,7 @@ pending:
 import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
-from ansible.module_utils.arubaos import ArubaOsApi, argspec_common, global_result, STATUS_SUCCESS
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, argspec_common, global_result, STATUS_SUCCESS
 
 
 def format_json_payload(module):

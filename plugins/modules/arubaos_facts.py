@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -18,7 +18,7 @@ DOCUMENTATION = r'''
 author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_facts
 version_added: 2.9.6
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Populates ansible_facts with C(sys_info) details about the system to which the query is being sent
 description:
     - Populates ansible_facts with C(sys_info) details about the system to which the query is being sent.
@@ -51,7 +51,7 @@ ansible_facts:
 import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
-from ansible.module_utils.arubaos import ArubaOsApi, argspec_common
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, argspec_common
 
 
 def run_module():

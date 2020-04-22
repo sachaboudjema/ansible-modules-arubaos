@@ -1,0 +1,17 @@
+namespace: "sachaboudjema"
+name: "arubaos"
+version: "0.1.0"
+readme: "README.md"
+license: 
+  - "GPL-3.0-or-later"
+authors:
+  - "Sacha Boudjema <sachaboudjema@gmail.com> @sachaboudjema"
+description: "Set of modules to automate Aruba Networks ArubaOS 8 controller plateforms."
+tags:
+  - aruba networks
+  - aruba
+  - arubaos
+  - networking
+  - rest
+repository: "https://github.com/sachaboudjema/ansible-modules-arubaos"
+issues: "https://github.com/sachaboudjema/ansible-modules-arubaos/issues"

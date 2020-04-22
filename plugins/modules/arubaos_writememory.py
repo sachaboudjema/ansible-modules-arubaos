@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -18,7 +18,7 @@ DOCUMENTATION = r'''
 author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_writememory
 version_added: 2.9.6
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Commits the pending configuration on the specified node
 description:
     - Commits the pending configuration on the specified node.
@@ -62,7 +62,7 @@ import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
 from ansible.errors import AnsibleModuleError
-from ansible.module_utils.arubaos import ArubaOsApi, argspec_common, STATUS_SUCCESS, STATUS_SKIPPED
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, argspec_common, STATUS_SUCCESS, STATUS_SKIPPED
 
 
 def run_module():

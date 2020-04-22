@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -17,7 +17,7 @@ DOCUMENTATION = r'''
 author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_config
 version_added: 2.9.6
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Queries full or partial configuration of a particular configuration node
 description:
     - Queries full or partial configuration of a particular configuration node.
@@ -69,7 +69,7 @@ response:
 import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
-from ansible.module_utils.arubaos import ArubaOsApi, argspec_common, CHOICES_CONFIG_TYPE
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, argspec_common, CHOICES_CONFIG_TYPE
 
 
 def run_module():

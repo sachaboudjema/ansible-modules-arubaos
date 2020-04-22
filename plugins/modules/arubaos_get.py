@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2019, Sacha Boudjema <sachaboudjema@gmail.com>
@@ -17,7 +17,7 @@ DOCUMENTATION = r'''
 author: Sacha Boudjema (@sachaboudjema)
 module: arubaos_get
 version_added: 2.9.6
-extends_documentation_fragment: arubaos
+extends_documentation_fragment: sachaboudjema.arubaos.arubaos
 short_description: Executes GET operations on API objects
 description:
     - Executes GET operations on API objects.
@@ -197,7 +197,7 @@ response:
 import json
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
-from ansible.module_utils.arubaos import ArubaOsApi, argspec_common, CHOICES_OBJECT_OPER, CHOICES_DATA_OPER, CHOICES_DATA_TYPE
+from ansible_collections.sachaboudjema.arubaos.plugins.module_utils.arubaos import ArubaOsApi, argspec_common, CHOICES_OBJECT_OPER, CHOICES_DATA_OPER, CHOICES_DATA_TYPE
 
 
 def filter_param(object_filters, data_filters):
